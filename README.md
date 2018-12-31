@@ -30,27 +30,27 @@ Application Client Server Using NodeJs (Nest) and AngularJs
 
 #Capture 
 ##Home
-![Image](./images/home.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/home.png)
 ***
 ##Liste des utilisateurs
-![Image](./images/users-list.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/users-list.png)
 ***
 ##Détail d'un post
-![Image](./images/post-detail.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/post-detail.png)
 ***
 ##Ajout d'un utilisateur
 ***
-![Image](./images/add-user.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/add-user.png)
 ***
 ##Modification d'un utilisateur
 ***
-![Image](./images/updateuser.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/updateuser.png)
 ***
 ##Ajout d'un post
 ***
-![Image](./images/add-post.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/add-post.png)
 ***
 ##Modification d'un post
 ***
-![Image](./images/edit-post.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/edit-post.png)
 ***
