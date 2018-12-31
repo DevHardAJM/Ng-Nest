@@ -7,7 +7,7 @@ import { CreatePostDto } from './create-post.dto';
 export class PostsService {
   private readonly posts: any[];
   constructor(private usersService: UsersService) {
-    this.posts = new Array(2)
+    this.posts = new Array(20)
       .fill(1)
       .map((e,i) => {
         return {
