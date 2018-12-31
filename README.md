@@ -1,9 +1,11 @@
 # Ng-Nest
 Application Client Server Using NodeJs (Nest) and AngularJs
 
+# By Mohtadi Abdeljalil GLSID 2 2018
+
 #Résumé
 
->  - __Cette  application a pour but  la gestion des utilisateurs et leurs postes en utilisant Angular (coté client) et NestJS (coté serveur) . __
+>  -Cette  application a pour but  la gestion des utilisateurs et leurs postes en utilisant Angular (coté client) et NestJS (coté serveur) . __
 
 ----------
 
