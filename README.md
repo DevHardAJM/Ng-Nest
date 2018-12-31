@@ -30,27 +30,27 @@ Application Client Server Using NodeJs (Nest) and AngularJs
 
 #Capture 
 ##Home
-![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/home.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/home.PNG)
 ***
 ##Liste des utilisateurs
-![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/users-list.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/users-list.PNG)
 ***
 ##Détail d'un post
-![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/post-detail.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/post-detail.PNG)
 ***
 ##Ajout d'un utilisateur
 ***
-![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/add-user.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/add-user.PNG)
 ***
 ##Modification d'un utilisateur
 ***
-![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/updateuser.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/updateuser.PNG)
 ***
 ##Ajout d'un post
 ***
-![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/add-post.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/add-post.PNG)
 ***
 ##Modification d'un post
 ***
-![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/edit-post.png)
+![Image](https://github.com/DevHardAJM/Ng-Nest/blob/master/images/edit-post.PNG)
 ***
