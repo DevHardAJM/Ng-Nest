@@ -1,0 +1,29 @@
+<div class="container mt-3">
+    <h1>
+        <i class="far fa-id-badge"></i> List Des utilisateurs 
+        <small>
+          <a (click)="showCreateUserForm()" class="btn text-success float-right"><i class="fas fa-plus"></i> Ajouter</a>
+      </small>
+    </h1>
+    
+  
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id}}</td>
+      <td (click)="showUserDetails(user.id)" >{{ user.name}}</td>
+      <td>{{ user.email}}</td>
+      <td>
+      <a (click)="showUpdateUserForm(user.id)" class="text-success m-1"><i class="fas fa-edit"></i></a>
+      <a (click)="delteUser(user.id)" class="text-danger m-1"><i class="fas fa-trash-alt"></i></a>
+      </td>
+      
+
+    </tr>
+  </table>
+</div>

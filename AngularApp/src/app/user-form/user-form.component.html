@@ -1,0 +1,25 @@
+<div class="container mt-3">
+  
+  <div class="col-lg-6 col-md-8 mx-auto">
+      <h1>{{(etat==1)?"New User":"Edit User"}}</h1>
+      <hr>
+      <form [formGroup]="userForm" (ngSubmit)="saveUser()">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input id="name"  type="text" class="form-control" formControlName="n" [(ngModel)]="user.name">
+        </div>
+        <div class="alert alert-danger"
+        *ngIf="userForm.controls['n'].touched && userForm.controls['n'].invalid">
+          <div *ngIf="userForm.controls['n'].errors.required" >Champs requis</div>
+          <div *ngIf="userForm.controls['n'].errors.minlength" >Minimum 6 caratères</div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" formControlName="e" [(ngModel)]="user.email">
+        </div>
+        <button class="btn btn-primary float-right">Terminer</button>
+      </form>
+  </div>
+    
+  </div>
+  

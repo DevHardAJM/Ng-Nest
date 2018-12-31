@@ -1,0 +1,44 @@
+<div class="container mt-4">
+        
+  <div class="row">
+        
+      <div class="col-lg-8">
+            <h1>
+                    <i class="far fa-id-badge"></i> List Des Posts 
+                    <small>
+                      <a (click)="showCreatePostForm()" class="btn text-success float-right"><i class="fas fa-plus"></i> Ajouter</a>
+                  </small>
+                </h1>
+          <div *ngFor="let post of posts" class="p-3">
+              <div class="card">
+                  <div class="card-body text-center">
+                      <h5 class="card-title ">{{post.title}}</h5>
+                      <p class="card-text">
+                          {{post.body}}
+                      </p>
+                  </div>
+                  <div class="card-footer text-muted">
+                      {{post.postedAt}}
+                      <a (click)="showPostDetails(post.id)" class="text-primary float-right">Detail</a>
+                  </div>
+              </div>
+            </div>         
+      </div>
+      <div class="col-lg-4 p-3">
+          <h2 class="card-title ">A la Une</h2>
+          <ul class="list-group">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Morbi leo risus</li>
+              <li class="list-group-item">Porta ac consectetur ac</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          
+      </div>
+  </div>
+    
+    
+</div>
+
+
+
