@@ -7,7 +7,7 @@ import { CreatePostDto } from './create-post.dto';
 export class PostsService {
   private readonly posts: any[];
   constructor(private usersService: UsersService) {
-    this.posts = new Array(200)
+    this.posts = new Array(2)
       .fill(1)
       .map((e,i) => {
         return {
@@ -35,8 +35,11 @@ export class PostsService {
   }
   
   removePost(postId) {
-    const postIndex = this.posts.findIndex(e => e.id === postId);
+    console.log(this.posts);
+    
+    const postIndex = this.posts.findIndex(e => e.id == postId);
     this.posts.splice(postIndex, 1);
+    console.log(this.posts);
     return postIndex;
   }
   
@@ -45,7 +48,7 @@ export class PostsService {
       id: this.generateId(),
       title: createPostDto.title,
       body: createPostDto.body,
-      postedAt: createPostDto.postedAt,
+      postedAt: faker.date.past(),
       userId: createPostDto.userId
     };
     this.posts.push(Post);
@@ -53,15 +56,13 @@ export class PostsService {
   }
 
   updatePost(postId: number,createPostDto: CreatePostDto) {
-
-    const postIndex = this.posts.findIndex(e => e.id === postId);
-    if (postIndex) {
+    const postIndex = this.posts.findIndex(e => e.id == postId);
+    if (postIndex>-1) {
       this.posts[postIndex].title=createPostDto.title;
       this.posts[postIndex].body=createPostDto.body;
-      this.posts[postIndex].postedAt=createPostDto.postedAt;
+      this.posts[postIndex].postedAt=faker.date.past();
       this.posts[postIndex].userId=createPostDto.userId;
     }
-    
     return this.posts[postIndex];
   }
   

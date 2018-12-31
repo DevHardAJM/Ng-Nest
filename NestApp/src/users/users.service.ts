@@ -26,7 +26,7 @@ export class UsersService {
   }
   
   removeUser(userId) {
-    const userIndex = this.users.findIndex(e => e.id === userId);
+    let userIndex = this.users.findIndex(e => e.id == userId);
     this.users.splice(userIndex, 1);
     return userIndex;
   }
@@ -41,9 +41,9 @@ export class UsersService {
     return user;
   }
 
-  updateUser(userId: number,createUserDto) {
-    const userIndex = this.users.findIndex(e => e.id === userId);
-    if (userIndex) {
+  updateUser(userId: number,createUserDto: CreateUserDto) {
+    const userIndex = this.users.findIndex(e => e.id == userId);
+    if (userIndex>-1) {
       this.users[userIndex].name=createUserDto.name;
       this.users[userIndex].email=createUserDto.email;
     }

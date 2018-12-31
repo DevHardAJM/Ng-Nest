@@ -26,12 +26,14 @@ export class PostsController {
   }
 
   @Put(':postId')
-  updatePost(@Param('userId') postId:number,@Body() createPostDto: CreatePostDto): any {
+  updatePost(@Param('postId') postId:number,@Body() createPostDto: CreatePostDto): any {
     return this.postsService.updatePost(postId,createPostDto);
   }
 
-  @Delete()
+  @Delete(':postId')
   removePost(postId): any {
+    console.log("Deleting server");
+    
     return this.postsService.removePost(postId);
   }
 }
